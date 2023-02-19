@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Yemek_Tarif_Sitesi2.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+
+    <link href="StyleSheet2.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 1376px;
+            background-color: #7E8BFE;
+        }
+        .auto-style2 {
+            height: 1332px;
+            width: 1119px;
+            margin-left: 110px;
+            background-color: #2C41FE;
+        }
+        .auto-style3 {
+            height: 26px;
+        }
+        .auto-style4 {
+            height: 278px;
+            width: 709px;
+            margin-left: 198px;
+        }
+        .auto-style5 {
+            height: 27px;
+        }
+        .auto-style6 {
+            height: 30px;
+        }
+        .auto-style7 {
+            width: 705px;
+            height: 42px;
+            margin-left: 199px;
+            background-color: #7E8BFE;
+        }
+        .auto-style8 {
+            width: 702px;
+            height: 95px;
+            margin-left: 200px;
+            background-color: #7E8BFE;
+        }
+        .auto-style9 {
+            width: 100%;
+            height: 44px;
+        }
+        .auto-style10 {
+            text-align: center;
+        }
+        .auto-style11 {
+            height: 46px;
+            margin-left: 1px;
+        }
+        .auto-style12 {
+            color: #000066;
+        }
+        .auto-style13 {
+            text-decoration: none;
+        }
+        .auto-style14 {
+            color: #1C0066;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="auto-style1">
+                <div class="auto-style3"></div>
+                <div class="auto-style2">
+
+                    <div class="auto-style11">
+                        <asp:Button ID="Button1" runat="server" BorderColor="#2C41FE" BorderStyle="Groove" Height="25px" OnClick="Button1_Click" Text=" &lt;=  Çıkış Yap" Width="135px" />
+                    </div>
+                    <div class="auto-style4">
+                        <asp:Image ID="Image1" runat="server" Height="275px" ImageUrl="~/REsimler/lepleziz3.jpg" Width="709px" />
+                    </div>
+                    <div class="auto-style6"></div>
+                    <div class="auto-style7">
+                        <table class="auto-style9">
+                            <tr>
+                                <td class="auto-style10"><a href="KategorilerAdmin.aspx" class="auto-style13"><span class="auto-style12"><strong>Kategoriler</strong></span></a></td>
+                                <td class="auto-style10"><a href="YemekAdmin.aspx" class="auto-style13"> <strong><span class="auto-style12">Yemekler</span></strong></a></td>
+                                <td class="auto-style10"><a href="YorumlarAdmin.aspx" class="auto-style13"> <strong><span class="auto-style12">Yorumlar</span></strong></a></td>
+                                <td class="auto-style10"><a href="GününYemegiAdmin.aspx" class="auto-style13"> <strong><span class="auto-style12">Günün Yemeği</span></strong></a></td>
+                                <td class="auto-style10"><a href="GelenTarifler.aspx" class="auto-style13"> <strong><span class="auto-style12">Gelen Tarifler</span></strong></a></td>
+                                <td class="auto-style10"><a href="Mesajlar.aspx" class="auto-style13"> <strong><span class="auto-style12">Mesajlar</span></strong></a></td>
+                                <td class="auto-style10"><a href="HakkımızdaAdmin.aspx" class="auto-style13"> <strong><span class="auto-style12">Hakkımızda</span></strong></a></td>
+                                <td class="auto-style10"><a href="Kullanıcılar.aspx"> <strong><span class="auto-style14">Kullanıcılar</span></strong></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="auto-style5"></div>
+                    <div style="height:auto;" class="auto-style8">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

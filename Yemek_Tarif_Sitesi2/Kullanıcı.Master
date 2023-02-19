@@ -1,0 +1,210 @@
+﻿ <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanıcı.master.cs" Inherits="Yemek_Tarif_Sitesi2.Kullanıcı" %>
+
+<!DOCTYPE html>
+
+<html>
+    
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="StyleSheet2.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style2 {
+            background-color: #DB91FF;
+        }
+
+        .auto-style6 {
+            width: 100%;
+        }
+
+        .auto-style8 {
+            background-color: #DB91FF;
+            text-align: center;
+        }
+        .auto-style12 {
+            height: 18px;
+        }
+        .auto-style13 {
+            background-color: #FFFFFF;
+        }
+        .auto-style14 {
+            height: 6px;
+            text-align: center;
+        }
+        .auto-style16 {
+            font-size: small;
+        }
+        .auto-style17 {
+            text-align: right;
+            height: 30px;
+            width: 88px;
+        }
+        .auto-style18 {
+            font-size: small;
+            text-align: right;
+            width: 88px;
+        }
+        .auto-style19 {
+            font-size: x-large;
+            text-align: center;
+        }
+        .auto-style20 {
+            height: 30px;
+            text-align: center;
+            background-color: #DB91FF;
+        }
+        .auto-style21 {
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+        .auto-style22 {
+            text-align: left;
+        }
+        .auto-style23 {
+            font-size: large;
+            color: #483D8B;
+        }
+        .auto-style24 {
+            color: #483D8B;
+        }
+        .auto-style25 {
+            color: #AE00F4;
+        }
+        .auto-style26 {
+            color: #A500F4;
+        }
+        .auto-style27 {
+            height: 30px;
+        }
+        .auto-style28 {
+            text-align: right;
+            width: 88px;
+        }
+        .auto-style29 {
+            font-size: xx-small;
+        }
+        .auto-style30 {
+            font-size: xx-small;
+            text-align: center;
+            height: 7px;
+        }
+        .auto-style32 {
+            font-size: xx-small;
+            height: 31px;
+        }
+        .auto-style33 {
+            text-align: right;
+            height: 31px;
+            width: 88px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height:1500px;background-color:darkslateblue;">
+        <div>&nbsp;&nbsp</div>
+            <div style="height:225px;width:225px;float:left;margin-left:50px;margin-top:75px;" class="auto-style13">
+                <div style="height:215px;width:215px;margin-left:5px;margin-top:5px" class="auto-style2">
+                    <table class="auto-style6">
+                        <tr>
+                            <td class="auto-style30" colspan="2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style19" colspan="2">Üye Girişi Ve Kayıt</td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style16" colspan="2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style18">Kullanıcı Adı :</td>
+                            <td>
+                                <asp:TextBox ID="KullaniciAdi" runat="server" Width="110px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style18">Mail : </td>
+                            <td>
+                                <asp:TextBox ID="kmail" runat="server" Height="16px" TextMode="Email" Width="111px"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style17">Şifre :</td>
+                            <td class="auto-style27">
+                                <asp:TextBox ID="Sifre" runat="server" Width="111px" TextMode="Password"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style28"></td>
+                            <td class="auto-style29">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style33">
+                                <asp:Button ID="Button2" runat="server" Height="20px" OnClick="Button2_Click" Text="Giriş Yap " Width="64px" />
+                            </td>
+                            <td class="auto-style32">
+                                <asp:Button ID="Button1" runat="server" Height="20px" OnClick="Button1_Click1" Text="Kayıt Ol" Width="60px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style14" colspan="2">
+                                <span class="auto-style29">&nbsp;</span></td>
+                        </tr>
+                    </table>
+                    <br />
+                </div>
+            </div>
+        <div style="height: 300px; width: 700px; float:left; margin-left: 50px" class="auto-style8">
+            <div class="auto-style12">
+            </div>
+            <asp:Image ID="Image1" runat="server" Height="266px" ImageUrl="~/REsimler/lepleziz2.jpg" Width="648px" />
+            </div>
+        <div>&nbsp;</div>
+        <div style="height: 35px; width: 700px; margin-left: 325px" class="auto-style2">
+            <table class="auto-style6">
+                <tr>
+                    <td class="auto-style20"><strong><em><a href="AnaSayfa.aspx">Ana Sayfa</a></em></strong></td>
+                    <td class="auto-style20"><strong><em><a href="GününYemegi.aspx">Günün Yemeği</a></em></strong></td>
+                    <td class="auto-style20"><strong><em><a href="TarifOner.aspx">Tarif&nbsp;Öner</a></em></strong></td>
+                    <td class="auto-style20"><strong><em><a href="Hakkimizda.aspx"><span class="auto-style2">Hakkımızda</span></a></em></strong></td>
+                    <td class="auto-style20"><strong><em><a href="Iletisim.aspx"><span class="auto-style2">İletişim</span></a></em></strong></td>
+                </tr>
+            </table>
+        </div>
+        <div>&nbsp;&nbsp;</div>
+        <div style="height:auto;">
+
+            <div style="height:auto;width:200px; float:left;margin-left:325px;margin-top:50px;" class="auto-style21">
+               <div style="height:auto;width:190px;margin-left:5px;margin-top:5px;margin-bottom:5px;" class="auto-style2">
+
+                   <strong><span class="auto-style23">Yemek Kategorileri<br />
+                   </span></strong>
+                   <br />
+                <asp:DataList ID="DataList1" runat="server">
+                    <ItemTemplate>
+                        <div class="auto-style22">
+                            &nbsp; <span class="auto-style24">*</span>
+                            <a href="KategoriDetay.aspx?KategoriID=<%#Eval("KategoriID") %>"><strong>
+                            <asp:Label ID="Label1" runat="server" CssClass="auto-style24" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                            </strong></a>
+                            &nbsp;<span class="auto-style25"><strong>(</strong></span><strong><asp:Label ID="Label2" runat="server" CssClass="auto-style26" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                            </strong><span class="auto-style26"><strong>)</strong></span></div>
+                    </ItemTemplate>
+                </asp:DataList>
+                   <br />
+
+               </div>
+            </div>
+
+            <div style="height:auto; width:450px; float:left; margin-left:50px;margin-top:50px;" class="auto-style2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">   
+                </asp:ContentPlaceHolder>
+            </div>
+
+
+        </div>
+            
+            </div>
+    </form>
+</body>
+</html>
+
